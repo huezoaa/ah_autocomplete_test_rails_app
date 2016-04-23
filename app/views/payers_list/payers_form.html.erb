@@ -1,0 +1,49 @@
+<div id="payers_form">
+<%= form_for :payers_lists, :url => update_payers_payers_path, :remote => true do -%>
+
+    <div class="flash-messages"><%= render("shared/error_messages") %></div>
+
+    <table>
+      <tr/>
+        <th><span class="label">Payer Shortcode</span></th>
+        <th><span class="label">Payer Synonym</span></th>
+        <th><span class="label">Payer Name</span></th>
+        <th><span class="label">Kipu Insurance ID</span></th>
+        <th></th>
+      </tr>
+
+      <% @payers.each do |payer| %>
+          <%= fields_for "payer[]", payer do |payer_fields| %>
+              <tr>
+                <td class="col-small"><%= payer_fields.text_field :payer_shortcode %></td>
+                <td class="col-med"><%= payer_fields.text_field :payer_synonym,
+                                                                :class => ["kls-autocomplete", @submit_class],
+                                                                data:{
+                                                                        kls_type: :payers,
+                                                                        target_synonym: "#payer_#{payer.id}_payer_synonym",
+                                                                        target_name: "#payer_#{payer.id}_payer_name",
+                                                                        target_insurance: "#payer_#{payer.id}_kipu_insurance_id",
+                                                                }
+                                                                 %>
+                </td>
+                <td class="col-med"><%= payer_fields.text_field :payer_name, readonly: true, :style => "background-color : #D8D8D8", tabindex: -1 %></td>
+                <td class="col-small"><%= payer_fields.text_field :kipu_insurance_id, readonly: true, :style => "background-color : #D8D8D8", tabindex: -1 %></td>
+                <td class="col-xsmall">
+                  <%= link_to image_tag("/assets/ui/icon_delete.png", :class => 'icon22', :alt => "Delete"),
+                              destroy_payer_payer_path(payer.id), :confirm => "Are you sure you want to delete this item?",
+                              :remote => true, tabindex: -1 %>
+                </td>
+              </tr>
+          <% end %>
+      <% end %>
+    </table>
+    <br />
+
+    <p><%= link_to "Add item", add_payer_payers_path, :disable_with => "Adding...", :remote => true, tabindex: -1 %></p>
+
+    <p> <%= submit_tag 'Update',:disable_with => "Working on it..." %> </p>
+
+
+<% end %>
+
+</div>

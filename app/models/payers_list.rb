@@ -7,12 +7,11 @@ class PayersList < ActiveRecord::Base
 
   def self.import
       update_folder = 'db/update_files/'
-      import_file = Rails.root.join(update_folder,'payers_2016-03-10.json')
-      records =  JSON.parse(File.read(import_file))
-
-      # puts records
+      import_file   = Rails.root.join(update_folder,'payers_2016-03-10.json')
+      records       = JSON.parse(File.read(import_file))
 
       fields = {}
+
       records.each do |payer|
         payer['PayerSynonyms'].each do |synonym|
           fields[:kipu_insurance_id] = payer['Id']
