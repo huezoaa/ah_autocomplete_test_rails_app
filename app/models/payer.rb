@@ -18,7 +18,7 @@ class Payer < ActiveRecord::Base
           fields[:payer_name]        = payer['HealthPlanName']
           fields[:payer_synonym]     = synonym['Name']
           # puts fields
-          PayersList.create(fields)
+          Payer.create(fields)
         end
       end
       puts 'Import Complete'

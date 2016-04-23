@@ -1,7 +1,7 @@
 class PayersController < ApplicationController
   #CRUD
 
-  def vista
+  def index
     @payers = Payer.all
 
   end

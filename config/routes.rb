@@ -18,10 +18,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'movies#index'
   resources :movies
-  root 'payers#vista'
+  root 'payers#index'
   resources :payers
 
-  #           root GET    /                                   payers#vista
   #       payers GET    /payers(.:format)                   payers#index
   #              POST   /payers(.:format)                   payers#create
   #    new_payer GET    /payers/new(.:format)               payers#new
