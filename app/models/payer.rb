@@ -6,7 +6,7 @@ class Payer < ActiveRecord::Base
 
   def self.import
       update_folder = 'db/update_files/'
-      import_file   = Rails.root.join(update_folder,'payers_2016-03-10.json')
+      import_file   = Rails.root.join(update_folder,'payers_test.json')
       records       = JSON.parse(File.read(import_file))
 
       fields = {}

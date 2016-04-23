@@ -1,0 +1,152 @@
+[
+{
+    "Id": 6628,
+    "ProviderId": 2,
+    "ApiPayerId": "60054",
+    "HealthPlanName": "Aetna Health Plan",
+    "Type": null,
+    "PayerSynonyms": [
+      {
+        "Id": 7673,
+        "PayerId": 6628,
+        "Name": "Aetna Health Plan"
+      },
+      {
+        "Id": 7674,
+        "PayerId": 6628,
+        "Name": "Aetna Life & Casualty Company"
+      },
+      {
+        "Id": 7675,
+        "PayerId": 6628,
+        "Name": "Magellan Behavioral Health (For Dates of Service 1/1/2006 and After - Provider ID Required - AETNA Subscribers only.)"
+      },
+      {
+        "Id": 7676,
+        "PayerId": 6628,
+        "Name": "Primary Choice (Aetna HP-NY/NJ)"
+      },
+      {
+        "Id": 7677,
+        "PayerId": 6628,
+        "Name": "Select Choice"
+      },
+      {
+        "Id": 7678,
+        "PayerId": 6628,
+        "Name": "Senior Choice (Aetna HP-NY/NJ)"
+      },
+      {
+        "Id": 7679,
+        "PayerId": 6628,
+        "Name": "aetna"
+      },
+      {
+        "Id": 7680,
+        "PayerId": 6628,
+        "Name": "Aetna 60054  (Commercial only)"
+      },
+      {
+        "Id": 7681,
+        "PayerId": 6628,
+        "Name": "Aetna"
+      },
+      {
+        "Id": 7682,
+        "PayerId": 6628,
+        "Name": "Aetna Health Plans (AHP)"
+      },
+      {
+        "Id": 7683,
+        "PayerId": 6628,
+        "Name": "Aetna Health Plans PPO"
+      },
+      {
+        "Id": 7684,
+        "PayerId": 6628,
+        "Name": "AHP of New Jersey  Parsippany"
+      },
+      {
+        "Id": 7685,
+        "PayerId": 6628,
+        "Name": "AHP of New Jersey  Purchase  NY"
+      },
+      {
+        "Id": 7686,
+        "PayerId": 6628,
+        "Name": "Ohio Valley HMO  Cincinnati (Aetna)"
+      },
+      {
+        "Id": 7687,
+        "PayerId": 6628,
+        "Name": "PHP of Georgia  Atlanta (Aetna)"
+      },
+      {
+        "Id": 7688,
+        "PayerId": 6628,
+        "Name": "PHP of North Ohio  Cleveland (Aetna)"
+      },
+      {
+        "Id": 7689,
+        "PayerId": 6628,
+        "Name": "Primary Choice (Aetna Health Plan of NY/NJ)"
+      },
+      {
+        "Id": 7690,
+        "PayerId": 6628,
+        "Name": "Select Choice (Aetna Health Plan of NY/NJ)"
+      },
+      {
+        "Id": 7691,
+        "PayerId": 6628,
+        "Name": "Senior Choice (Aetna Health Plan of NY/NJ)"
+      },
+      {
+        "Id": 7692,
+        "PayerId": 6628,
+        "Name": "Southwest Health Plan (Aetna HMO)"
+      }
+    ],
+    "Provider": null
+  },
+  {
+    "Id": 6629,
+    "ProviderId": 2,
+    "ApiPayerId": "61425",
+    "HealthPlanName": "Benefit Trust Life Insurance Company",
+    "Type": null,
+    "PayerSynonyms": [
+      {
+        "Id": 7693,
+        "PayerId": 6629,
+        "Name": "Benefit Trust Life Insurance Company"
+      },
+      {
+        "Id": 7694,
+        "PayerId": 6629,
+        "Name": "Starmark"
+      },
+      {
+        "Id": 7695,
+        "PayerId": 6629,
+        "Name": "Tooling & Manufacturing Assoc."
+      },
+      {
+        "Id": 7696,
+        "PayerId": 6629,
+        "Name": "Trustmark (Includes Starmark & TMA)"
+      },
+      {
+        "Id": 7697,
+        "PayerId": 6629,
+        "Name": "Tooling & Manufacturing Association"
+      },
+      {
+        "Id": 7698,
+        "PayerId": 6629,
+        "Name": "Trustmark"
+      }
+    ],
+    "Provider": null
+  }
+  ]
