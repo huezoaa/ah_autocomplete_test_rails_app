@@ -18,7 +18,19 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'movies#index'
   resources :movies
-  root 'actors#index'
+  root 'payers#vista'
+  resources :payers
+
+  #           root GET    /                                   payers#vista
+  #       payers GET    /payers(.:format)                   payers#index
+  #              POST   /payers(.:format)                   payers#create
+  #    new_payer GET    /payers/new(.:format)               payers#new
+  #   edit_payer GET    /payers/:id/edit(.:format)          payers#edit
+  #        payer GET    /payers/:id(.:format)               payers#show
+  #              PATCH  /payers/:id(.:format)               payers#update
+  #              PUT    /payers/:id(.:format)               payers#update
+  #              DELETE /payers/:id(.:format)               payers#destroy
+  #
   resources :tasks
 
   get 'verification_autocomplete/.:format' => 'routes#test_action'

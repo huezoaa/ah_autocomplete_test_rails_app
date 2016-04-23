@@ -1,6 +1,5 @@
-class PayersList < ActiveRecord::Base
-
-  # attr_accessible :kipu_insurance_id, :payer_name,
+class Payer < ActiveRecord::Base
+   # attr_accessible :kipu_insurance_id, :payer_name,
                   # :payer_synonym, :api_payer_id,
                   # :provider_id, :type  - need to add to migration
 

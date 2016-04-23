@@ -1,6 +1,6 @@
-class CreatePayersLists < ActiveRecord::Migration
+class CreatePayers < ActiveRecord::Migration
   def change
-    create_table :payers_lists do |t|
+    create_table :payers do |t|
       t.string :kipu_insurance_id
       t.string :payer_name
       t.string :payer_synonym
