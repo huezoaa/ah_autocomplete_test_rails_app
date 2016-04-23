@@ -1,0 +1,29 @@
+<%= form_for :payers, url: payer_path, :remote => true do -%>
+  <p id="notice"><%= notice %></p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Kipu Insurance ID</th>
+        <th>Payer Name</th>
+        <th>Payer Synonym</th>
+        <th>API Payer ID</th>
+      </tr>
+    </thead>
+
+      <% @payers.each do |payer| %>
+        <%= fields_for "payer[]", payer do |payer_fields| %>
+          <tr>
+            <td><%= payer_fields.text_field :kipu_insurance_id %> </td>
+            <td><%= payer_fields.text_field :payer_name %> </td>
+            <td><%= payer_fields.text_field :payer_synonym %> </td>
+            <td><%= payer_fields.text_field :api_payer_id %> </td>
+          </tr>
+        <% end %>
+
+      <% end %>
+  </table>
+
+  <p><%= submit_tag 'Update', disable_with: "I'll be done when I'm done." %> </p>
+
+<% end %>

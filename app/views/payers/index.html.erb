@@ -1,24 +1,5 @@
-<h1>Payers List</h1>
+<h1>Payers List (AH new!)</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Kipu Insurance ID</th>
-      <th>Payer Name</th>
-      <th>Payer Synonym</th>
-      <th>API Payer ID</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @payers.each do |payer| %>
-      <tr>
-        <td><%= payer.kipu_insurance_id %></td>
-        <td><%= payer.payer_name %></td>
-        <td><%= payer.payer_synonym %></td>
-        <td><%= payer.api_payer_id %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-<br>
+  <div id='payers'>
+    <%= render 'payers_form'  %>
+  </div>
