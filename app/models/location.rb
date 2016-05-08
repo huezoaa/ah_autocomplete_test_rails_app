@@ -4,7 +4,8 @@ class Location < ActiveRecord::Base
 
   def self.in_region(region)
 
-    joins(:region).merge(Region.where('regions.name = ?', region))
+    # joins(:region).merge(Region.where('regions.name = ?', region))
+    joins(:region).where(regions: {name: region}) #same as above, but clearer
 
   end
 end
