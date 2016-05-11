@@ -1,5 +1,10 @@
-Movies, Actors - AHU tests for autocomplete.
-Address, payers - AHU test for building a table like the payers table in healthmatters.
-payers also used to test the importing of new payers from a JSON file.
-Person, Location, Region - for Thoughtbot/Upcase practice exercise on ActiveRecord querying.
+- Movies, Actors - AHU tests for autocomplete.
+
+- Address, payers - AHU test for building a table like the payers table in healthmatters.
+
+- payers also used to test the importing of new payers from a JSON file.
+- Person, Location, Region - for Thoughtbot/Upcase practice exercise on ActiveRecord querying.
+
+- Vendor, InterfaceLog, CollaborateMDInterface --> used to test certain Rails concepts like saving an object from a class method.
+
 
