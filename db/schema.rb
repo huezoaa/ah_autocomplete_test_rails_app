@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160506223727) do
+ActiveRecord::Schema.define(version: 20160511115303) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,37 @@ ActiveRecord::Schema.define(version: 20160506223727) do
     t.string   "zipcode"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "collaborate_md_interfaces", force: :cascade do |t|
+    t.integer  "vendor_id"
+    t.string   "facility_name"
+    t.string   "facility_id"
+    t.string   "customer_name"
+    t.string   "customer_id"
+    t.string   "provider_number"
+    t.string   "provider_last_name"
+    t.string   "provider_first_name"
+    t.string   "exchanger_attributes"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
+
+  create_table "interface_logs", force: :cascade do |t|
+    t.integer  "patient_master_id"
+    t.text     "response_message"
+    t.string   "response_code"
+    t.datetime "response_timestamp"
+    t.string   "vendor_account"
+    t.string   "vendor_id"
+    t.string   "vendor_name"
+    t.string   "vendor_type"
+    t.string   "patient_master_uuid"
+    t.string   "user_full_name"
+    t.string   "user_id"
+    t.string   "log"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
   end
 
   create_table "locations", force: :cascade do |t|
@@ -74,6 +105,14 @@ ActiveRecord::Schema.define(version: 20160506223727) do
     t.datetime "deadline"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "vendors", force: :cascade do |t|
+    t.string   "company_name"
+    t.string   "vendor_type"
+    t.boolean  "vendor_status", default: true
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
   end
 
 end
