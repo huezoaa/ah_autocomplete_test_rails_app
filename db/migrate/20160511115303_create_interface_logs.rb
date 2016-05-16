@@ -17,3 +17,19 @@ class CreateInterfaceLogs < ActiveRecord::Migration
     end
   end
 end
+
+=begin
+{
+ :patient_master_id=>10,
+ :response_message=>"El mensajito",
+ :response_code=>"201",
+ :response_timestamp=>"20160511",
+ :vendor_account=>"909090909",
+ :vendor_id=>"223344",
+ :vendor_name=>"CMD Orlando",
+ :vendor_type=>"collaborate_md",
+ :patient_master_uuid=>"e02aa3de-1f3b-4083-9f26-5532522b5d81",
+ :user_full_name=>"Angel Huezo",
+ :user_id=>"1"
+ }
+=end
